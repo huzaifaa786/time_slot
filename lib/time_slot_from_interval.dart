@@ -54,6 +54,7 @@ class TimesSlotGridViewFromInterval extends StatefulWidget {
   /// selectedColor: Colors.blue,
   /// ```
   final Color? selectedColor;
+  final BoxBorder border;
 
   /// color of unselected card time
   ///
@@ -74,6 +75,7 @@ class TimesSlotGridViewFromInterval extends StatefulWidget {
     required this.initTime,
     required this.onChange,
     required this.timeSlotInterval,
+    required this.border,
     this.locale = "en",
     this.crossAxisCount = 3,
     this.icon,
@@ -141,6 +143,7 @@ class _TimesSlotGridViewFromIntervalState
       icon: widget.icon,
       selectedColor: widget.selectedColor,
       unSelectedColor: widget.unSelectedColor,
+      border: widget.border,
     );
   }
 

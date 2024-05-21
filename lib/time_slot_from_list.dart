@@ -49,6 +49,7 @@ class TimesSlotGridViewFromList extends StatefulWidget {
   /// selectedColor: Colors.blue,
   /// ```
   final Color? selectedColor;
+  final BoxBorder border;
 
   /// color of unselected card time
   ///
@@ -69,6 +70,7 @@ class TimesSlotGridViewFromList extends StatefulWidget {
     required this.initTime,
     required this.onChange,
     required this.listDates,
+    required this.border,
     this.locale = "en",
     this.crossAxisCount = 3,
     this.icon,
@@ -111,6 +113,7 @@ class _TimesSlotGridViewFromListState extends State<TimesSlotGridViewFromList> {
       icon: widget.icon,
       selectedColor: widget.selectedColor,
       unSelectedColor: widget.unSelectedColor,
+      border: widget.border,
     );
   }
 }

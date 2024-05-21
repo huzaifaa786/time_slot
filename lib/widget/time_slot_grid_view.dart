@@ -35,6 +35,7 @@ class TimeSlotGridView extends StatefulWidget {
   /// locale: 'en' ,//default value
   /// ```
   final String locale;
+  final BoxBorder border;
 
   /// icon of card time
   ///
@@ -69,6 +70,7 @@ class TimeSlotGridView extends StatefulWidget {
     required this.initTime,
     required this.onChange,
     required this.listDates,
+    required this.border,
     this.locale = "en",
     this.crossAxisCount = 3,
     this.icon,
@@ -138,6 +140,7 @@ class _TimeSlotGridViewState extends State<TimeSlotGridView> {
                       return TimeItemCard(
                         locale: widget.locale,
                         selectedColor: widget.selectedColor,
+                        border: widget.border,
                         unSelectedColor: widget.unSelectedColor,
                         icon: widget.icon,
                         isSelected: time.hour == widget.initTime.hour &&

@@ -11,12 +11,14 @@ class TimeItemCard extends StatelessWidget {
   final Color? selectedColor;
   final Color? unSelectedColor;
   final ValueChanged<DateTime> onChange;
+  final BoxBorder border;
   const TimeItemCard({
     super.key,
     required this.time,
     required this.onChange,
     required this.isSelected,
     required this.locale,
+    required this.border,
     this.icon,
     this.selectedColor,
     this.unSelectedColor,
@@ -33,6 +35,7 @@ class TimeItemCard extends StatelessWidget {
           color: isSelected
               ? selectedColor ?? Theme.of(context).primaryColor
               : unSelectedColor ?? Colors.white,
+          border: border,
           borderRadius: BorderRadius.circular(5),
         ),
         child: Row(
