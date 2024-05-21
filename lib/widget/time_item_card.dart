@@ -36,7 +36,7 @@ class TimeItemCard extends StatelessWidget {
               ? selectedColor ?? Theme.of(context).primaryColor
               : unSelectedColor ?? Colors.white,
           border: border,
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(8),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,

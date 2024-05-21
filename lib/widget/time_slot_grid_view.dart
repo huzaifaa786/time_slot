@@ -129,8 +129,8 @@ class _TimeSlotGridViewState extends State<TimeSlotGridView> {
                     shrinkWrap: true,
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: widget.crossAxisCount,
-                      crossAxisSpacing: 5.0,
-                      mainAxisSpacing: 5.0,
+                      crossAxisSpacing: 8,
+                      mainAxisSpacing: 8,
                       childAspectRatio: 3,
                     ),
                     itemCount: listTimes.length,
